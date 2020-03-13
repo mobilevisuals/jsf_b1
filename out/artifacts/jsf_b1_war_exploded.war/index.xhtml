@@ -21,9 +21,7 @@ Author: J. Juneau
          <br/>
       </p>
       <p>Book Recommendation:  Java 9 Recipes
-         <br/>
-         <h:graphicImage id="java9recipes" library="image" name="java9recipes.png"/>
-         <br/>
+
 
          <h:dataTable id="authorTable" value="#{authorController.authorList}"
                       var="author">
@@ -37,9 +35,9 @@ Author: J. Juneau
          </h:dataTable>
          <br/>
          <br/>
-         <p>
-            Use the following form to add an author to the list.
-         </p>
+
+            Use the following form to add an author to the list.<br/>
+
          <h:outputLabel for="newAuthorFirst" value="New Author First Name: "/>
          <!-- calls set methods on author when commandbutton is pressed ~~~~~~~~~~~~~~~~-->
          <h:inputText id="newAuthorFirst" value="#{authorController.newAuthorFirst}"/>
